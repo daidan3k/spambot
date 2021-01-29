@@ -8,8 +8,6 @@ init(strip=not sys.stdout.isatty())  # strip colors if stdout is redirected
 from termcolor import cprint
 from pyfiglet import figlet_format
 
-pip install pyautogui
-
 cprint(figlet_format("SpamBot", font="big"), "red", "on_grey", attrs=["bold"])
 
 
