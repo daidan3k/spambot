@@ -32,7 +32,7 @@ num = int(numero)
 
 clear()
 
-cuenta_atras = 6
+cuenta_atras = 11
 for i in range(1, cuenta_atras+1):
     print(Fore.MAGENTA + Style.BRIGHT +
           "Entre en el campo de insercion de texto y espere unos segundos...")
@@ -46,6 +46,7 @@ print(Fore.MAGENTA + Style.BRIGHT +
 mensajes_enviados = 1
 for x in range(num):
     pyautogui.typewrite(msj)
+    time.sleep(0.4)
     pyautogui.press("enter")
     print(mensajes_enviados, "mensajes enviados")
     mensajes_enviados = mensajes_enviados+1
