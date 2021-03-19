@@ -27,7 +27,7 @@ msj = input(Fore.RED + Style.BRIGHT + "Mensaje a enviar: " +
             Fore.WHITE + Style.RESET_ALL)
 numero = input(Fore.RED + Style.BRIGHT +
                "Numero de mensajes: " + Fore.WHITE + Style.RESET_ALL)
-tiempo = input(Fore.RED + Style.BRIGHT + 'Tiempo entre mensajes (s):' + Fore.WHITE + Style.RESET_ALL)
+tiempo = input(int(Fore.RED + Style.BRIGHT + 'Tiempo entre mensajes (s):' + Fore.WHITE + Style.RESET_ALL))
 
 num = int(numero)
 
