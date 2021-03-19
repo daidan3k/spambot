@@ -27,6 +27,7 @@ msj = input(Fore.RED + Style.BRIGHT + "Mensaje a enviar: " +
             Fore.WHITE + Style.RESET_ALL)
 numero = input(Fore.RED + Style.BRIGHT +
                "Numero de mensajes: " + Fore.WHITE + Style.RESET_ALL)
+tiempo = input(Fore.RED + Style.BRIGHT + 'Tiempo entre mensajes (s):' + Fore.WHITE + Style.RESET_ALL)
 
 num = int(numero)
 
@@ -46,7 +47,7 @@ print(Fore.MAGENTA + Style.BRIGHT +
 mensajes_enviados = 1
 for x in range(num):
     pyautogui.typewrite(msj)
-    time.sleep(0.4)
+    time.sleep(tiempo)
     pyautogui.press("enter")
     print(mensajes_enviados, "mensajes enviados")
     mensajes_enviados = mensajes_enviados+1
